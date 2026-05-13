@@ -203,7 +203,7 @@ export function ServicesStrip({ heading, services }: ServicesStripProps) {
           {IconComponent && (
             <IconComponent
               size={24}
-              aria-hidden="true"
+              aria-hidden={true}
               style={{ color: 'var(--color-primary)' }}
             />
           )}
@@ -242,7 +242,7 @@ export function ServicesStrip({ heading, services }: ServicesStripProps) {
               {cat.label}
             </button>
           ))}
-          <div aria-hidden="true" style={{ position: 'absolute', bottom: 0, left: indicatorStyle.left, width: indicatorStyle.width, height: '2px', background: 'var(--color-primary)', borderRadius: '1px', transition: 'left 250ms var(--ease-standard), width 250ms var(--ease-standard)', pointerEvents: 'none' }} />
+          <div aria-hidden={true} style={{ position: 'absolute', bottom: 0, left: indicatorStyle.left, width: indicatorStyle.width, height: '2px', background: 'var(--color-primary)', borderRadius: '1px', transition: 'left 250ms var(--ease-standard), width 250ms var(--ease-standard)', pointerEvents: 'none' }} />
         </div>
 
         <div className="services-grid" style={{ display: 'grid', gridTemplateColumns: gridCols, gap: 'var(--space-sm)' }}>
