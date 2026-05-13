@@ -1,0 +1,1 @@
+const fs = require('fs'); const compPath = 'components/sections/TeamPhotoGrid.tsx'; const pagePath = 'app/team/page.tsx'; // Check if paths work console.log('Component at:', compPath); console.log('Page at:', pagePath); const teamData = require('./lib/content').team; console.log('Team members:', teamData.length, teamData.map(t => t.name).join(', '));

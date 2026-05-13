@@ -1,0 +1,1 @@
+const fs=require(" fs);console.log(maker ready);\nconsole.log(1);
