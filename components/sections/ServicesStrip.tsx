@@ -42,7 +42,7 @@ const serviceCategory = (slug: string): string => {
   return map[slug] ?? 'development'
 }
 
-const serviceIconMap: Record<string, React.ComponentType<{ size?: number; 'aria-hidden'?: Booleanish | undefined; style?: React.CSSProperties }>> = {
+const serviceIconMap: Record<string, React.ComponentType<{ size?: number; 'aria-hidden'?: boolean | undefined; style?: React.CSSProperties }>> = {
   'website-development': Monitor,
   'design-ux-ui': Palette,
   branding: Sparkles,
